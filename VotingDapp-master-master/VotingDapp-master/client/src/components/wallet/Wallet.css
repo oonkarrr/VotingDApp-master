@@ -1,0 +1,53 @@
+/* Common styles for all devices */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Ensure the container takes the full height of the viewport*/
+}
+
+/* Default styles */
+.button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-default {
+    width: 352px;
+    height: 47px;
+    background-color: #ffa545;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hover effect */
+.button-default:hover {
+    background-color: #ff8c00; /* Change to a slightly darker shade on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .button-default {
+        width: 351px;
+        height: 40px;
+        padding: 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .button-default {
+        width: 352px;
+        height: 35px;
+        padding: 10px;
+        font-size: 10px;
+    }
+}
